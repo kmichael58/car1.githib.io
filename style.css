@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #222;
+  color: white;
+  overflow: hidden;
+}
+
+.game-area {
+  position: relative;
+  width: 400px;
+  height: 600px;
+  background-color: #333;
+  border: 3px solid #fff;
+  overflow: hidden;
+}
+
+.player-car {
+  position: absolute;
+  bottom: 20px;
+  left: 175px;
+  width: 50px;
+  height: 100px;
+  background: url('car.png') no-repeat center/cover;
+  z-index: 2;
+}
+
+.obstacle {
+  position: absolute;
+  width: 50px;
+  height: 100px;
+  background: red;
+}
+
+.score-board {
+  position: absolute;
+  top: 20px;
+  font-size: 24px;
+}
+
+#score {
+  color: #00fe9b;
+}
+.controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.controls button {
+  background-color: #00feba;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+}
+
+.controls button:hover {
+  background-color: #5b548a;
+}
+
+.score-board {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#score {
+  color: #00fe9b;
+}
+
+@media (max-width: 550px) {
+  .controls button {
+    padding: 8px 15px;
+    font-size: 16px;
+  }
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: #222;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.game-area {
+  width: 90%;
+  height: 400px;
+  max-width: 400px;
+  background-color: #333;
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+
+.player-car {
+  position: absolute;
+  bottom: 20px;
+  left: calc(50% - 25px); /* Center the car horizontally */
+  width: 50px;
+  height: 100px;
+ 
+  border-radius: 10px;
+}
+
+.obstacle {
+  position: absolute;
+  width: 30px;
+  height: 100px;
+  background-color: red;
+  border-radius: 10px;
+}
+
+.score-board {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+#score {
+  color: #00fe9b;
+  font-size: 24px;
+}
+
+/* Control buttons */
+.controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.controls button {
+  background-color: #00feba;
+  border: none;
+  padding: 10px 15px;
+  margin: 0 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+}
+
+.controls button:hover {
+  background-color: #5b548a;
+}
+
+/* Responsive Design */
+@media (max-width: 550px) {
+  .game-area {
+    width: 100%;
+    height: 300px;
+  }
+
+  .player-car {
+    width: 40px;
+    height: 80px;
+    bottom: 15px;
+  }
+
+  .obstacle {
+    width: 40px;
+    height: 80px;
+  }
+
+  .controls button {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
+  #score {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .game-area {
+    height: 250px;
+  }
+
+  .player-car {
+    width: 35px;
+    height: 70px;
+  }
+
+  .obstacle {
+    width: 35px;
+    height: 70px;
+  }
+
+  .controls button {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+
+  #score {
+    font-size: 18px;
+  }
+}
